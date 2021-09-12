@@ -1,5 +1,7 @@
 import "./Home.css";
 
+import picOne from "./assets/pic.jpg";
+
 const Home = () => {
   return (
     <div>
@@ -7,7 +9,7 @@ const Home = () => {
         <div className="slideShow">Slide show</div>
         <div className="heroOne">
           <p>hero section</p>
-          <img src="./assets/pic.jpg" alt="something" />
+          <img src={picOne} alt="something" />
         </div>
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>

@@ -8,9 +8,12 @@ import Product from "./components/Product";
 import SingleProduct from "./components/SingleProduct";
 import Error from "./components/Error";
 import Cart from "./components/Cart";
-import Auth from "./components/Auth"
+import Auth from "./components/Auth";
 //navbar
 import Navbar from "./components/Navbar/Navbar";
+
+//footer
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -29,16 +32,17 @@ function App() {
             <Product />
           </Route>
           <Route exact path="/cart">
-            <Cart/>
+            <Cart />
           </Route>
           <Route exact path="/auth">
-            <Auth/>
+            <Auth />
           </Route>
           <Route path="/product/:id" children={<Product />}></Route>
           <Route path="*">
             <Error />
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

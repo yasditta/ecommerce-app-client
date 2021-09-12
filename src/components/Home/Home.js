@@ -5,7 +5,10 @@ const Home = () => {
     <div>
       <div className="wrapper">
         <div className="slideShow">Slide show</div>
-        <div className="heroOne">Hero section</div>
+        <div className="heroOne">
+          <p>hero section</p>
+          <img src="./assets/pic.jpg" alt="something" />
+        </div>
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>
         <div className="filler"></div>
@@ -14,7 +17,8 @@ const Home = () => {
       </div>
       <div className="cardWrapper">
         <div className="cardTitle">
-          <h3>Lorem Ipsum</h3> <p>Lorem Ipsum sater kihert oii</p>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem Ipsum sater kihert oii</p>
         </div>
         <div className="cardSection">
           <div className="card">

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <div className="wrapper">
-        <div className="slideShow">Slide show</div>
+        <div className="slideShow">Slide show Changed</div>
         <div className="heroOne">
           <p>hero section</p>
           <img src={picOne} alt="something" />

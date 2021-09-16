@@ -1,20 +1,35 @@
 import "./Home.css";
 
-import picOne from "./assets/pic.jpg";
+import picOne from "./assets/pic1.jpg";
+import picTwo from "./assets/pic2.jpg";
+import picThree from "./assets/home1.jpg";
 
 const Home = () => {
   return (
     <div>
       <div className="wrapper">
         <div className="slideShow">Slide show</div>
-        <div className="heroOne">
-          <p>hero section</p>
-          <img src={picOne} alt="something" />
-        </div>
+        <div className="fashionpics">
+          <img src={picOne} alt="fashion" />
+          <img src={picTwo} alt="man1" />
+          <div class="firstSection">
+            <h3>Autumn / Winter 2021 Collection</h3>
+            <p>Trendy Clothing, Fit for Every Occasion, Great Quality with Big Discounts</p>
+            <button class="button1">SHOP NOW</button>
+            </div>
+          </div>
+         
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>
         <div className="filler"></div>
-        <div className="heroThree">third hero section</div>
+        <div className="living">
+        <img src={picThree} alt="livingroom" />
+        <div class="thirdSection">
+            <h3>Our Trendy Homeware</h3>
+            <p>Quality, elegant products suitable for all homes</p>
+            <button class="button2">SHOP NOW</button>
+            </div>
+        </div>
         <div className="filler"></div>
       </div>
       <div className="cardWrapper">

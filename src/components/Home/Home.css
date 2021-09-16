@@ -7,22 +7,72 @@
 .filler {
   height: 1vh;
 }
-.heroOne {
-  background: bisque;
-  width: 100%;
-  height: 25vh;
+
+/* first section */
+
+.fashionpics{
+  width: -5px;
+  height: -10px;
+  background: white;
+  margin: 20px;
+  text-align: center;
 }
+
+.firstSection {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button1 {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
 .heroTwo {
   background: rgb(250, 193, 118);
   width: 100%;
   height: 25vh;
 }
 
-.heroThree {
-  background: rgb(241, 164, 62);
-  width: 100%;
-  height: 25vh;
+/* homeware section */
+
+.living {
+  background: white;
+  margin: 10px;
+  position: relative;
 }
+
+.thirdSection {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 13px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 
 /* Card Section */
 

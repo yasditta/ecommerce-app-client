@@ -16,9 +16,7 @@ const Product = ({
       <h4>Category: {category}</h4>
       <p>Description: {description}</p>
       <h4>Price: ${price}</h4>
-      <button className='delete-btn' onClick={() => removeProduct(id)}>
-        Remove
-      </button>
+      <button onClick={() => removeProduct(id)}>Remove</button>
       <hr />
     </article>
   )

@@ -1,51 +1,43 @@
-import "./App.css";
-// react router
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-//pages
-import Home from "./components/Home/Home";
-import About from "./components/About";
-import Product from "./components/Product";
-import SingleProduct from "./components/SingleProduct";
-import Error from "./components/Error";
-import Cart from "./components/Cart";
-import Auth from "./components/Auth";
-//navbar
-import Navbar from "./components/Navbar/Navbar";
+import React from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-//footer
-import Footer from "./components/Footer/Footer";
+import Home from './components/Home/Home'
+import About from './components/About'
+import Error from './components/Error'
+import Cart from './components/Cart'
+import Auth from './components/Auth'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+import Collection from './components/Collection'
 
 function App() {
   return (
-    <div className="App">
-      <h2>Codecademy E-Commerce APP</h2>
+    <main>
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route path="/about">
+          <Route path='/about'>
             <About />
           </Route>
-          <Route path="/product">
-            <Product />
-          </Route>
-          <Route exact path="/cart">
+          <Route exact path='/cart'>
             <Cart />
           </Route>
-          <Route exact path="/auth">
+          <Route exact path='/auth'>
             <Auth />
           </Route>
-          <Route path="/product/:id" children={<Product />}></Route>
-          <Route path="*">
+          <Route path='/product'>
+            <Collection />
+          </Route>
+          <Route path='*'>
             <Error />
           </Route>
         </Switch>
         <Footer />
       </Router>
-    </div>
-  );
+    </main>
+  )
 }
-
-export default App;
+export default App

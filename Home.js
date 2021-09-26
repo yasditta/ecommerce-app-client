@@ -9,10 +9,9 @@ const Home = () => {
       <div className="wrapper">
         <div className="slideShow">Slide show</div>
         <div className="fashionpics">
-         <h3>Fashion section</h3>
+          <h3>Fashion section</h3>
           <img src={picOne} alt="fashion" />
           <img src={picTwo} alt="man1" />
-          
         </div>
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>

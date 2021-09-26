@@ -92,8 +92,13 @@ export const Form = styled.form`
 `;
 
 export const ErrorMessage = styled.div`
-  background-color: orange;
-  width: 100%;
+  background-color: #fccccc;
+  width: 97.5%;
   height: 20px;
   margin-left: 10px;
+  padding: 0.7em;
+  border-radius: 10px;
+  color: #990202;
+  letter-spacing: 0.1em;
+  text-align: center;
 `;

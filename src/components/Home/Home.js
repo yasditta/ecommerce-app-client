@@ -4,14 +4,14 @@ import picOne from "./assets/pic1.jpg";
 import picTwo from "./assets/pic2.jpg";
 import picThree from "./assets/home1.jpg";
 
+import Slide from "../Slideshow/Slide";
+
 const Home = () => {
   return (
     <div>
       <div className="wrapper">
-        <div className="slideShow">Slide show</div>
-        <div className="fashionpics">
-          <img src={picOne} alt="fashion" />
-          <img src={picTwo} alt="man1" />
+        <div className="slideShow">
+          <Slide />
           <div class="firstSection">
             <h3>Autumn / Winter 2021 Collection</h3>
             <p>
@@ -21,7 +21,10 @@ const Home = () => {
             <button class="button1">SHOP NOW</button>
           </div>
         </div>
-
+        <div className="fashionpics">
+          <img src={picOne} alt="fashion" />
+          <img src={picTwo} alt="man1" />
+        </div>
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>
         <div className="filler"></div>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 import picOne from "./assets/pic1.jpg";
@@ -47,7 +48,7 @@ const Home = () => {
           <div className="card">
             <div className="image">
               <img
-                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=200"
+                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=150"
                 alt="cardImage"
               />
             </div>
@@ -64,7 +65,7 @@ const Home = () => {
           <div className="card">
             <div className="image">
               <img
-                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=200"
+                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=150"
                 alt="cardImage"
               />
             </div>
@@ -81,7 +82,7 @@ const Home = () => {
           <div className="card">
             <div className="image">
               <img
-                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=200"
+                src="https://images.pexels.com/photos/3568518/pexels-photo-3568518.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=150"
                 alt="cardImage"
               />
             </div>

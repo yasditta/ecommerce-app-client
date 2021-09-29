@@ -3,6 +3,8 @@
   width: 80vw;
   height: 100%;
   margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
@@ -34,10 +36,10 @@
 }
 
 .button1 {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 10px;
-  color: rgb(231, 230, 230);
+  color: rgb(58, 58, 58);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -46,7 +48,7 @@
   cursor: pointer;
 }
 .button1:hover {
-  background: rgba(0, 0, 0, 1);
+  background: rgba(250, 250, 250, 0.8);
 }
 .heroTwo {
   background: rgb(250, 193, 118);
@@ -89,31 +91,35 @@
   height: 100%;
   background: white;
 }
-
+.cardTitle {
+  text-align: center;
+}
 .cardSection {
   width: 90vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0 auto;
+  padding: 0;
+  border: thin solid black;
 }
 
 .card {
-  width: 100%;
-  height: 100%;
   background: white;
   box-shadow: 1px 3px 4px lightgray;
   margin: 20px;
 }
 
+.card img {
+  width: 100%;
+  height: auto;
+}
 .card:hover {
   box-shadow: 5px 5px 5px lightgray;
 }
-
-.card img {
-  padding: 10px;
+.card .desc {
+  text-align: center;
 }
-
 .card button {
   margin: 10px;
   border: none;
@@ -126,4 +132,8 @@
   .cardSection {
     flex-direction: column;
   }
+  /* .card {
+    width: 100%;
+    margin: 0;
+  } */
 }

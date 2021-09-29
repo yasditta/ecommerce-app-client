@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Box = styled.div`
   padding: 80px 60px;
-  background: black;
+  background: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
   ${
     "" /* position: relative;
   bottom: 0; */
@@ -39,10 +41,13 @@ export const Row = styled.div`
 `;
 
 export const FooterLink = styled.a`
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.1em;
   color: #fff;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
+  color: black;
 
   &:hover {
     color: lightgray;
@@ -52,8 +57,10 @@ export const FooterLink = styled.a`
 `;
 
 export const Heading = styled.p`
-  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 20px;
   color: #fff;
   margin-bottom: 40px;
-  font-weight: bold;
+  color: black;
 `;

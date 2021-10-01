@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const bgColor = "#fff2e0";
+const bgColor = "rgb(240, 240, 240)";
 const width = "100%";
 
 export const Box = styled.div`
@@ -89,6 +89,7 @@ export const Form = styled.form`
   width: 80%;
   position: relative;
   margin: 0 auto;
+  text-align: left;
 `;
 
 export const ErrorMessage = styled.div`

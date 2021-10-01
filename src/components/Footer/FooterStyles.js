@@ -44,7 +44,7 @@ export const FooterLink = styled.a`
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.1em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 15px;
   text-decoration: none;
   color: black;
@@ -61,6 +61,6 @@ export const Heading = styled.p`
   letter-spacing: 0.2em;
   font-size: 20px;
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: black;
 `;

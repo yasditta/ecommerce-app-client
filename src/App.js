@@ -1,27 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+//components
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
+
+//pages
 import Home from "./pages/home/Home";
-import About from "./components/About";
-import Error from "./components/Error";
-import Cart from "./components/Cart";
-import Auth from "./components/Auth";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import Collection from "./components/Collection";
+import NotFound from "./pages/notFound/NotFound";
+import Cart from "./pages/cart/Cart";
+import Auth from "./pages/account/Account";
+import Collection from "./pages/product/Collection";
 import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
     <main>
       <Router>
-        <Navbar />
+        <Nav />
         <Switch>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route path="/about">
-            <About />
           </Route>
           <Route exact path="/cart">
             <Cart />
@@ -36,7 +35,7 @@ function App() {
             <Admin />
           </Route>
           <Route path="*">
-            <Error />
+            <NotFound />
           </Route>
         </Switch>
         <Footer />

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import ShopBtn from "../shopBtn/ShopBtn";
 
 import "./Card.css";

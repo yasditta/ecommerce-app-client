@@ -1,7 +1,7 @@
 import "./Home.css";
 
-import cardData from "../../components/card/cardData";
-import Card from "../../components/card/Card";
+import cardData from "../../components/Card/cardData";
+import Card from "../../components/Card/Card";
 import Slide from "../../components/Slideshow/Slide";
 const Home = () => {
   return (

@@ -1,17 +1,17 @@
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //components
-import Nav from './components/nav/Nav'
-import Footer from './components/Footer/Footer'
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
 
 //pages
-import Home from './pages/home/Home'
-import NotFound from './pages/notFound/NotFound'
-import Cart from './pages/cart/Cart'
-import Auth from './pages/account/Account'
-import Collection from './pages/product/Collection'
-import Admin from './pages/admin/Admin'
+import Home from "./pages/home/Home";
+import NotFound from "./pages/notFound/NotFound";
+import Cart from "./pages/cart/Cart";
+import Auth from "./pages/account/Account";
+import Collection from "./pages/product/Collection";
+import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
@@ -19,28 +19,28 @@ function App() {
       <Router>
         <Nav />
         <Switch>
-          <Route exact path='/'>
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path='/cart'>
+          <Route exact path="/cart">
             <Cart />
           </Route>
-          <Route exact path='/auth'>
+          <Route exact path="/auth">
             <Auth />
           </Route>
-          <Route path='/product'>
+          <Route path="/product">
             <Collection />
           </Route>
-          <Route path='/admin'>
+          <Route path="/admin">
             <Admin />
           </Route>
-          <Route path='*'>
+          <Route path="*">
             <NotFound />
           </Route>
         </Switch>
         <Footer />
       </Router>
     </main>
-  )
+  );
 }
-export default App
+export default App;

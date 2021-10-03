@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 
+import "./ProductStyle.css";
 const Product = ({
   id,
   image,
@@ -11,14 +12,14 @@ const Product = ({
 }) => {
   return (
     <article>
-      <img src={image} alt='articleimage' width='200' height='200' />
-      <h3>Title: {title}</h3>
-      <h4>Category: {category}</h4>
-      <p>Description: {description}</p>
+      <img src={image} alt="articleimage" width="100" height="100" />
+      <h3>{title}</h3>
+      <h4>{category}</h4>
+      {/* <p>Description: {description}</p> */}
       <h4>Price: ${price}</h4>
       <button onClick={() => removeProduct(id)}>Remove</button>
       <hr />
     </article>
-  )
-}
-export default Product
+  );
+};
+export default Product;

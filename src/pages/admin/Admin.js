@@ -10,11 +10,13 @@ import {
   TextArea,
   Form,
   ErrorMessage,
+  SuccessMessage,
 } from "./adminStyles";
 
 const Admin = () => {
   const [errorContainer, setErrorContainer] = useState(false);
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const API_URL = "http://localhost:5000/api/v1/products";
 
@@ -52,6 +54,14 @@ const Admin = () => {
         setErrorContainer(false);
       }, 3000);
       return;
+    } else if (formData.quantity <= 0) {
+      setError("Quantity must be greater than 0");
+      setErrorContainer(true);
+      setTimeout(function () {
+        setError("");
+        setErrorContainer(false);
+      }, 3000);
+      return;
     }
 
     createProduct(formData);
@@ -64,9 +74,15 @@ const Admin = () => {
         },
         body: JSON.stringify(product),
       });
-      console.log("posted");
+      setSuccess("Successfully Posted");
       return await res.json();
     }
+
+    e.target.elements.title.value = "";
+    e.target.elements.description.value = "";
+    e.target.elements.quantity.value = "";
+    e.target.elements.price.value = "";
+    e.target.elements.image.value = "";
   };
   return (
     <Box>
@@ -77,6 +93,9 @@ const Admin = () => {
             <ErrorMessage id="errorMessage">{error}</ErrorMessage>
           ) : (
             ""
+          )}
+          {success === "Successfully Posted" && (
+            <SuccessMessage>{success}</SuccessMessage>
           )}
           <Label htmlFor="title">Product Title</Label>
           <InputText type="text" id="title" name="title" />

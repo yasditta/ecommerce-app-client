@@ -49,7 +49,15 @@ const Collection = () => {
   return (
     <section>
       <h1>Our Collection</h1>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexWrap: "wrap",
+          margin: "0 auto",
+        }}
+      >
         {collection.map((product) => {
           return (
             <Product

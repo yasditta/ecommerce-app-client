@@ -1,4 +1,4 @@
-import ShopBtn from "../shopBtn/ShopBtn";
+import ShopBtn from "../ShopBtn/ShopBtn";
 
 import "./Card.css";
 

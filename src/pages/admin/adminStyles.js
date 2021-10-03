@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const bgColor = "#fff2e0";
+const bgColor = "rgb(240, 240, 240)";
 const width = "100%";
 
 export const Box = styled.div`
@@ -89,16 +89,21 @@ export const Form = styled.form`
   width: 80%;
   position: relative;
   margin: 0 auto;
+  text-align: left;
 `;
 
 export const ErrorMessage = styled.div`
   background-color: #fccccc;
   width: 97.5%;
-  height: 20px;
+  height: 25px;
   margin-left: 10px;
-  padding: 0.7em;
   border-radius: 10px;
   color: #990202;
   letter-spacing: 0.1em;
   text-align: center;
+`;
+
+export const SuccessMessage = styled(ErrorMessage)`
+  background-color: #a6b089;
+  color: white;
 `;

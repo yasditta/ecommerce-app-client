@@ -22,10 +22,6 @@ export default function Slider() {
     }
   };
 
-  const moveDot = (index) => {
-    setSlideIndex(index);
-  };
-
   return (
     <div className="container-slider">
       {SliderData.map((obj, index) => {

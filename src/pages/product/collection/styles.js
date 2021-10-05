@@ -6,7 +6,7 @@ function getWidthString(span) {
   return `width: ${width}%;`;
 }
 
-export const Grapper = styled.section`
+export const Wrapper = styled.section`
   margin: 0 13%;
 `
 export const Grid = styled.div`

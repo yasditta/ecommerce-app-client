@@ -2,16 +2,18 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 //components
-import Nav from "./components/Nav/Nav";
+import Nav from "./components/nav/Nav";
 import Footer from "./components/Footer/Footer";
+import ProductDetail from './components/ProductDetail/ProductDetail';
 
 //pages
-import Home from "./pages/Home/Home";
-import NotFound from "./pages/NotFound/NotFound";
-import Cart from "./pages/Cart/Cart";
-import Auth from "./pages/Account/Account";
-import Collection from "./pages/Product/Collection";
-import Admin from "./pages/Admin/Admin";
+import Home from "./pages/home/Home";
+import NotFound from "./pages/notFound/NotFound";
+import Cart from "./pages/cart/Cart";
+import Auth from "./pages/account/Account"; 
+import Collection from "./pages/product/collection/Collection";
+import Admin from "./pages/admin/Admin";
+
 
 function App() {
   return (
@@ -28,9 +30,12 @@ function App() {
           <Route exact path="/auth">
             <Auth />
           </Route>
-          <Route path="/product">
+          <Route exact path="/product">
             <Collection />
           </Route>
+          <Route exact path="/product/:id">
+            <ProductDetail/>
+          </Route>  
           <Route path="/admin">
             <Admin />
           </Route>

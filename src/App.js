@@ -4,16 +4,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //components
 import Nav from "./components/nav/Nav";
 import Footer from "./components/Footer/Footer";
-import ProductDetail from './components/ProductDetail/ProductDetail';
+import ProductDetail from "./components/ProductDetail/ProductDetail";
 
 //pages
 import Home from "./pages/home/Home";
 import NotFound from "./pages/notFound/NotFound";
 import Cart from "./pages/cart/Cart";
-import Auth from "./pages/account/Account"; 
+import Auth from "./pages/account/Account";
 import Collection from "./pages/product/collection/Collection";
-import Admin from "./pages/admin/Admin";
-
+import Admin from "./pages/Admin/Admin";
 
 function App() {
   return (
@@ -34,8 +33,8 @@ function App() {
             <Collection />
           </Route>
           <Route exact path="/product/:id">
-            <ProductDetail/>
-          </Route>  
+            <ProductDetail />
+          </Route>
           <Route path="/admin">
             <Admin />
           </Route>

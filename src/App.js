@@ -12,7 +12,7 @@ import NotFound from "./pages/notFound/NotFound";
 import Cart from "./pages/cart/Cart";
 import Auth from "./pages/account/Account";
 import Collection from "./pages/product/collection/Collection";
-import Admin from "./pages/Admin/Admin";
+import Admin from "./pages/admin/Admin";
 
 function App() {
   return (
